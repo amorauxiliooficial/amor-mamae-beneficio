@@ -1,5 +1,5 @@
 import React from 'react';
-import { DollarSign, ShieldCheck } from 'lucide-react';
+import { DollarSign } from 'lucide-react';
 
 export const ValuesBanner: React.FC = () => {
   return (
@@ -11,12 +11,9 @@ export const ValuesBanner: React.FC = () => {
           <span>Valores de R$ 5.612,00 à R$ 14.900,00</span>
         </div>
         
-        {/* Mobile: texto minimalista */}
-        <div className="flex md:hidden flex-col items-center text-center gap-2">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="w-5 h-5 text-brand-green" />
-            <p className="text-white font-bold">Escritório Especializado em Auxílio-Maternidade</p>
-          </div>
+        {/* Mobile: texto minimalista com emoji */}
+        <div className="flex md:hidden flex-col items-center text-center gap-1">
+          <p className="text-white font-bold">🛡️ Escritório Especializado em Auxílio-Maternidade</p>
           <p className="text-white/90 text-sm">
             Garantimos que você não perca seu benefício.
           </p>
