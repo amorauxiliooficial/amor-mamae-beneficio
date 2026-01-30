@@ -7,35 +7,33 @@ import teamBackgroundMobile from "@/assets/team-background-mobile.png";
 export const Hero: React.FC = () => {
   return (
     <section className="relative bg-gradient-to-br from-white to-brand-pink/10 overflow-hidden">
-      {/* Mobile Layout - Imagem de fundo com headline sobreposta */}
-      <div className="md:hidden relative min-h-[100vh]">
+      {/* Mobile Layout */}
+      <div className="md:hidden">
         {/* Header mobile */}
-        <div className="relative z-20 pt-4 pb-2 flex justify-center">
+        <div className="pt-4 pb-2 flex justify-center">
           <Logo layout="vertical" iconClassName="h-14" />
         </div>
         
-        {/* Imagem de fundo */}
-        <div className="absolute inset-0">
+        {/* Imagem cortada - estilo header */}
+        <div className="relative w-full h-48 overflow-hidden">
           <img
             src={teamBackgroundMobile}
             alt="Equipe Amor Auxílio Maternidade"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-auto object-cover object-left-top scale-150 -translate-x-4"
           />
-          {/* Overlay gradiente para legibilidade do texto */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/40"></div>
         </div>
         
-        {/* Headline no canto superior esquerdo */}
-        <div className="relative z-10 px-4 pt-4">
-          <h1 className="text-white text-xl font-bold leading-tight drop-shadow-lg">
+        {/* Headline */}
+        <div className="px-4 py-4">
+          <h1 className="text-foreground text-xl font-bold leading-tight text-center">
             30 mil mamães já receberam entre{" "}
-            <span className="text-brand-pink-light">R$ 5.612</span> e{" "}
-            <span className="text-brand-pink-light">R$ 14.900</span> com um processo seguro e acompanhado por especialistas.
+            <span className="text-brand-pink">R$ 5.612</span> e{" "}
+            <span className="text-brand-pink">R$ 14.900</span> com um processo seguro e acompanhado por especialistas.
           </h1>
         </div>
         
-        {/* CTA no rodapé da seção */}
-        <div className="absolute bottom-6 left-0 right-0 z-20 px-4">
+        {/* CTA */}
+        <div className="px-4 pb-6">
           <Button
             onClick={() =>
               document.getElementById("steps")?.scrollIntoView({
