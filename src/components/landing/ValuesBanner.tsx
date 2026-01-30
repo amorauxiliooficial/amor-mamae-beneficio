@@ -1,5 +1,5 @@
 import React from 'react';
-import { DollarSign, ShieldCheck } from 'lucide-react';
+import { DollarSign } from 'lucide-react';
 
 export const ValuesBanner: React.FC = () => {
   return (
@@ -13,13 +13,9 @@ export const ValuesBanner: React.FC = () => {
         
         {/* Mobile: texto alternativo com elementos de segurança */}
         <div className="flex md:hidden flex-col items-center text-center px-4 py-2">
-          <div className="flex items-center gap-2 mb-3">
-            <ShieldCheck className="w-7 h-7 text-brand-green drop-shadow-md" />
-            <p className="text-white text-lg font-bold leading-tight">
-              Escritório Especializado em<br />Auxílio-Maternidade
-            </p>
-            <ShieldCheck className="w-7 h-7 text-brand-green drop-shadow-md" />
-          </div>
+          <p className="text-white text-lg font-bold leading-tight mb-3">
+            Escritório Especializado em<br />Auxílio-Maternidade
+          </p>
           
           <div className="bg-white/15 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/20">
             <p className="text-white/95 text-sm font-medium leading-relaxed">
