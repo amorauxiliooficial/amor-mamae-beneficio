@@ -13,10 +13,10 @@ function App() {
     <div className="min-h-screen bg-muted overflow-x-hidden">
       <Hero />
       <ValuesBanner />
+      <Eligibility />
       <Testimonials />
       <Steps />
       <SocialProof />
-      <Eligibility />
       <FAQ />
       <Footer />
       <FloatingWhatsapp />
