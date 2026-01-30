@@ -11,11 +11,6 @@ export const Eligibility: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto bg-white/60 border border-white shadow-2xl rounded-[2rem] p-8 md:p-12 backdrop-blur-md">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-16">
-            {/* Texto alternativo só aparece no mobile */}
-            <div className="flex md:hidden w-full flex-col items-center justify-center text-center">
-               <p className="text-brand-pink-dark font-bold text-lg mb-2">Escritório Especializado em Auxílio-Maternidade</p>
-               <p className="text-muted-foreground text-sm leading-relaxed">Nosso trabalho é garantir que você não perca seu benefício por erros ou falta de informação.</p>
-            </div>
             {/* Logo só aparece no desktop */}
             <div className="hidden md:flex w-full md:w-5/12 flex-col items-center justify-center">
                <div className="bg-white p-8 rounded-full shadow-xl mb-6 ring-4 ring-brand-pink/20">
