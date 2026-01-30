@@ -8,21 +8,21 @@ export const Hero: React.FC = () => {
   return (
     <section className="relative bg-gradient-to-br from-white to-brand-pink/10 overflow-hidden">
       {/* Mobile Layout - Imagem de fundo com headline sobreposta */}
-      <div className="md:hidden relative min-h-[85vh]">
+      <div className="md:hidden relative min-h-[100vh]">
         {/* Header mobile */}
         <div className="relative z-20 pt-4 pb-2 flex justify-center">
           <Logo layout="vertical" iconClassName="h-14" />
         </div>
         
         {/* Imagem de fundo */}
-        <div className="absolute inset-0 top-20">
+        <div className="absolute inset-0">
           <img
             src={teamBackgroundMobile}
             alt="Equipe Amor Auxílio Maternidade"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-center"
           />
           {/* Overlay gradiente para legibilidade do texto */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/40"></div>
         </div>
         
         {/* Headline no canto superior esquerdo */}
