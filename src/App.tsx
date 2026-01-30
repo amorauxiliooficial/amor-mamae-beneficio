@@ -1,27 +1,27 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+import { Hero } from './components/landing/Hero';
+import { ValuesBanner } from './components/landing/ValuesBanner';
+import { SocialProof } from './components/landing/SocialProof';
+import { Eligibility } from './components/landing/Eligibility';
+import { Testimonials } from './components/landing/Testimonials';
+import { Steps } from './components/landing/Steps';
+import { FAQ } from './components/landing/FAQ';
+import { Footer } from './components/landing/Footer';
+import { FloatingWhatsapp } from './components/landing/FloatingWhatsapp';
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <div className="min-h-screen bg-muted overflow-x-hidden">
+      <Hero />
+      <ValuesBanner />
+      <Testimonials />
+      <Steps />
+      <SocialProof />
+      <Eligibility />
+      <FAQ />
+      <Footer />
+      <FloatingWhatsapp />
+    </div>
+  );
+}
 
 export default App;
