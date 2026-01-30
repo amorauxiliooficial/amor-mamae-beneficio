@@ -10,8 +10,9 @@ export const Eligibility: React.FC = () => {
       <div className="absolute inset-0 z-0 bg-white/90 md:bg-white/85 backdrop-blur-[2px]"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto bg-white/60 border border-white shadow-2xl rounded-[2rem] p-8 md:p-12 backdrop-blur-md">
-          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-            <div className="w-full md:w-5/12 flex flex-col items-center justify-center">
+          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-16">
+            {/* Logo só aparece no desktop */}
+            <div className="hidden md:flex w-full md:w-5/12 flex-col items-center justify-center">
                <div className="bg-white p-8 rounded-full shadow-xl mb-6 ring-4 ring-brand-pink/20">
                   <Logo layout="vertical" iconClassName="h-32 md:h-40" />
                </div>
@@ -20,7 +21,7 @@ export const Eligibility: React.FC = () => {
                  <p className="text-foreground font-bold text-lg">Assessoria Especializada</p>
                </div>
             </div>
-            <div className="w-full md:w-7/12 space-y-8 text-center md:text-left border-t md:border-t-0 md:border-l border-muted pt-8 md:pt-0 md:pl-12">
+            <div className="w-full md:w-7/12 space-y-6 md:space-y-8 text-center md:text-left md:border-l border-muted md:pl-12">
               <div>
                 <h3 className="text-brand-pink-dark font-extrabold text-3xl md:text-4xl mb-3">Oportunidade Única!</h3>
                 <p className="text-foreground font-semibold text-xl">Quem pode receber o benefício?</p>
