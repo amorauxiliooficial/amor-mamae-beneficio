@@ -1,24 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Logo } from "../Logo";
 import { Button } from "./Button";
 import teamPhoto from "@/assets/team-photo.webp";
 import teamHeroMobile from "@/assets/team-hero-mobile.png";
 
 export const Hero: React.FC = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Calcula a escala e opacidade baseado no scroll (efeito parallax)
+  const maxScroll = 300;
+  const progress = Math.min(scrollY / maxScroll, 1);
+  const scale = 1 + progress * 0.15; // Escala de 1 a 1.15
+  const imageOpacity = 1 - progress * 0.3; // Opacidade de 1 a 0.7
+
   return (
     <section className="relative bg-gradient-to-br from-white to-brand-pink/10 overflow-hidden">
       {/* Mobile Layout */}
-      <div className="md:hidden relative h-[70vh]">
-        {/* Imagem de fundo */}
-        <div className="absolute inset-0">
+      <div className="md:hidden relative h-[85vh] overflow-hidden">
+        {/* Imagem de fundo com efeito parallax */}
+        <div 
+          className="absolute inset-0 transition-transform duration-100 ease-out"
+          style={{
+            transform: `scale(${scale})`,
+            opacity: imageOpacity,
+          }}
+        >
           <img
             src={teamHeroMobile}
             alt="Equipe Amor Auxílio Maternidade"
             className="w-full h-full object-cover object-top"
           />
-          {/* Overlay gradiente para legibilidade */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50"></div>
         </div>
+        
+        {/* Overlay gradiente para legibilidade */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50"></div>
         
         {/* Conteúdo sobreposto */}
         <div className="relative z-10 flex flex-col h-full px-4 py-4">
