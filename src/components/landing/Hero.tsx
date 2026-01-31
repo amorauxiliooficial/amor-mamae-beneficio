@@ -16,8 +16,8 @@ export const Hero: React.FC = () => {
             alt="Equipe Amor Auxílio Maternidade"
             className="w-full h-full object-cover object-top"
           />
-          {/* Overlay gradiente para legibilidade */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50"></div>
+          {/* Overlay gradiente para legibilidade - mais escuro */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
         </div>
         
         {/* Conteúdo sobreposto */}
@@ -28,10 +28,10 @@ export const Hero: React.FC = () => {
           </div>
           
           {/* Headline */}
-          <h1 className="text-white text-lg font-bold leading-snug drop-shadow-lg text-left">
+          <h1 className="text-brand-pink-light text-lg font-bold leading-snug drop-shadow-lg text-left">
             30 mil mamães já receberam entre{" "}
-            <span className="text-brand-pink-light">R$ 5.612</span> e{" "}
-            <span className="text-brand-pink-light">R$ 14.900</span> com um processo seguro e acompanhado por especialistas.
+            <span className="text-white font-extrabold">R$ 5.612</span> e{" "}
+            <span className="text-white font-extrabold">R$ 14.900</span> com um processo seguro e acompanhado por especialistas.
           </h1>
           
           {/* Spacer */}
