@@ -16,8 +16,8 @@ export const Hero: React.FC = () => {
             alt="Equipe Amor Auxílio Maternidade"
             className="w-full h-full object-cover object-top"
           />
-          {/* Overlay gradiente para legibilidade - mais escuro */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+          {/* Overlay gradiente para legibilidade */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50"></div>
         </div>
         
         {/* Conteúdo sobreposto */}
