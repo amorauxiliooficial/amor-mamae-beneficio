@@ -49,10 +49,6 @@ export const Testimonials: React.FC = () => {
                   {t.name.split('|')[0]}
                 </div>
               </div>
-              <div className="bg-brand-cyan text-white text-center py-1 md:py-2 text-[8px] md:text-sm font-bold flex items-center justify-center gap-1 md:gap-2">
-                <span className="hidden md:inline">(11) 3956-1714</span>
-                <span className="md:hidden">Saiba +</span>
-              </div>
             </div>
           ))}
         </div>
