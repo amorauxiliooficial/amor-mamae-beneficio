@@ -9,7 +9,6 @@ interface VideoTestimonial {
 
 const testimonials: VideoTestimonial[] = [
   { id: 1, name: "Depoimento 1", videoUrl: "/videos/depoimento-1.mp4" },
-  { id: 2, name: "Depoimento 2", videoUrl: "/videos/depoimento-2.mp4" },
   { id: 3, name: "Depoimento 3", videoUrl: "/videos/depoimento-3.mp4" },
   { id: 4, name: "Depoimento 4", videoUrl: "/videos/depoimento-4.mp4" },
   { id: 5, name: "Depoimento 5", videoUrl: "/videos/depoimento-5.mp4" },
