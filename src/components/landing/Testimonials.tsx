@@ -9,6 +9,7 @@ interface VideoTestimonial {
 
 const testimonials: VideoTestimonial[] = [
   { id: 1, name: "Depoimento 1", videoUrl: "/videos/depoimento-1.mp4" },
+  { id: 2, name: "Depoimento 2", videoUrl: "/videos/depoimento-2.mp4" },
   { id: 3, name: "Depoimento 3", videoUrl: "/videos/depoimento-3.mp4" },
   { id: 4, name: "Depoimento 4", videoUrl: "/videos/depoimento-4.mp4" },
   { id: 5, name: "Depoimento 5", videoUrl: "/videos/depoimento-5.mp4" },
@@ -77,8 +78,15 @@ export const Testimonials: React.FC = () => {
           </p>
         </div>
         
-        {/* Grid responsivo para os vídeos */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 max-w-6xl mx-auto">
+        {/* Mobile: 4 vídeos (esconde o segundo) */}
+        <div className="grid grid-cols-2 gap-3 md:hidden max-w-6xl mx-auto">
+          {testimonials.filter(t => t.id !== 2).map((t) => (
+            <VideoCard key={t.id} testimonial={t} />
+          ))}
+        </div>
+        
+        {/* Desktop: todos os 5 vídeos */}
+        <div className="hidden md:grid md:grid-cols-5 gap-4 max-w-6xl mx-auto">
           {testimonials.map((t) => (
             <VideoCard key={t.id} testimonial={t} />
           ))}
