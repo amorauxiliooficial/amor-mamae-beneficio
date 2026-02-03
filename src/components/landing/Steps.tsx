@@ -37,9 +37,9 @@ export const Steps: React.FC = () => {
         
         {/* Mobile: cards empilhados */}
         <div className="flex flex-col gap-4 md:hidden">
-          <StepCard number="1" title="Faça sua análise gratuita:" description="Responda algumas perguntas rápidas no nosso chat e saiba na hora se tem o direito." />
-          <StepCard number="2" title="Nossa equipe cuida de tudo:" description="Tendo direito, você será encaminhada ao nosso atendimento para darmos a entrada no benefício." />
-          <StepCard number="3" title="Você recebe seu dinheiro:" description="Receberá o valor diretamente por ordem de pagamento, sem burocracia!" />
+          <StepCard number="1" title="Análise gratuita e sem risco:" description="Você descobre se tem direito antes de pagar qualquer valor. Sem pegadinhas. Sem obrigação de continuar." />
+          <StepCard number="2" title="Cuidamos de toda a burocracia por você:" description="Preenchimento, conferência e envio corretos para evitar erros que fazem milhares de mães perderem o benefício." />
+          <StepCard number="3" title="Acompanhamento humano do início ao fim:" description="Você fala com uma consultora real, que acompanha seu caso até a conclusão do processo." />
         </div>
         
         {/* Desktop: layout circular */}
@@ -49,9 +49,9 @@ export const Steps: React.FC = () => {
                <path d="M200 60 Q 400 10, 600 60 T 1000 60" fill="none" stroke="hsl(var(--brand-pink))" strokeWidth="2" strokeDasharray="5,5" className="opacity-30" />
              </svg>
           </div>
-          <StepCard number="1" title="Faça sua análise gratuita:" description="Responda algumas perguntas rápidas no nosso chat e saiba na hora se tem o direito." />
-          <StepCard number="2" title="Nossa equipe cuida de tudo:" description="Tendo direito, você será encaminhada ao nosso atendimento para darmos a entrada no benefício." />
-          <StepCard number="3" title="Você recebe seu dinheiro:" description="Receberá o valor diretamente por ordem de pagamento, sem burocracia!" />
+          <StepCard number="1" title="Análise gratuita e sem risco:" description="Você descobre se tem direito antes de pagar qualquer valor. Sem pegadinhas. Sem obrigação de continuar." />
+          <StepCard number="2" title="Cuidamos de toda a burocracia por você:" description="Preenchimento, conferência e envio corretos para evitar erros que fazem milhares de mães perderem o benefício." />
+          <StepCard number="3" title="Acompanhamento humano do início ao fim:" description="Você fala com uma consultora real, que acompanha seu caso até a conclusão do processo." />
         </div>
         
         <div className="text-center mt-10 md:mt-16">
