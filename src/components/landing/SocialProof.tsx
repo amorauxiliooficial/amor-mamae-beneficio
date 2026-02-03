@@ -4,11 +4,19 @@ import { Button } from './Button';
 
 export const SocialProof: React.FC = () => {
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-16 md:py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end relative">
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-brand-pink/10 rounded-full z-0 blur-3xl opacity-50"></div>
+        <div className="flex flex-col items-center gap-8 md:gap-12">
+          {/* Título em cima */}
+          <div className="text-center space-y-6 max-w-3xl">
+            <h2 className="text-2xl md:text-4xl font-bold text-brand-pink leading-tight">
+              EMPRESA AVALIADA EM MAIS DE <br/><span className="text-brand-pink-dark">30 MIL COMENTÁRIOS POSITIVOS</span> <br/>NO GOOGLE!
+            </h2>
+          </div>
+          
+          {/* iPhone centralizado */}
+          <div className="relative">
+             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-brand-pink/10 rounded-full z-0 blur-3xl opacity-50"></div>
              
              {/* iPhone Frame */}
              <div className="relative z-10 max-w-[280px] w-full">
@@ -81,17 +89,14 @@ export const SocialProof: React.FC = () => {
                <div className="absolute right-0 top-36 w-1 h-16 bg-[#2a2a2a] rounded-r-sm"></div>
              </div>
              
-             <div className="absolute -bottom-6 left-0 lg:left-10 bg-brand-green p-1 rounded-full shadow-lg z-20 animate-bounce">
+             <div className="absolute -bottom-6 -left-6 bg-brand-green p-1 rounded-full shadow-lg z-20 animate-bounce">
                 <BadgeCheck size={64} className="text-white fill-brand-green" />
              </div>
           </div>
-          <div className="w-full lg:w-1/2 text-center lg:text-left space-y-8 relative">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-pink leading-tight">
-              EMPRESA AVALIADA EM MAIS DE <br/><span className="text-brand-pink-dark">30 MIL COMENTÁRIOS POSITIVOS</span> <br/>NO GOOGLE!
-            </h2>
-            <div className="flex justify-center lg:justify-start">
-               <Button variant="primary" pulse>Quero meu benefício!</Button>
-            </div>
+          
+          {/* Botão abaixo */}
+          <div className="text-center mt-4">
+             <Button variant="primary" pulse>Quero meu benefício!</Button>
           </div>
         </div>
       </div>
