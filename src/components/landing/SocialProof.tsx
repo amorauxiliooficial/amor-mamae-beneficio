@@ -12,7 +12,7 @@ export const SocialProof: React.FC = () => {
         <img
           src={teamPhoto}
           alt="Equipe Amor Auxílio Maternidade"
-          className="absolute inset-0 w-full h-full object-cover object-[center_15%] md:object-[center_40%] brightness-105 contrast-[1.03]"
+          className="absolute inset-0 w-full h-full object-cover object-[center_15%] md:object-[center_30%] brightness-105 contrast-[1.03]"
         />
 
         {/* Overlay gradiente de baixo para cima */}
