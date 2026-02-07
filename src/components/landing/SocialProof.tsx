@@ -30,7 +30,7 @@ export const SocialProof: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-brand-pink/10 rounded-full z-0 blur-3xl opacity-50"></div>
 
             <div
-              className="relative z-10 max-w-[280px] md:max-w-[320px] w-full animate-fade-in"
+              className="relative z-10 max-w-[280px] w-full animate-fade-in"
               style={{
                 transform: 'rotateY(-8deg) rotateX(3deg)',
                 transformStyle: 'preserve-3d',
@@ -42,11 +42,11 @@ export const SocialProof: React.FC = () => {
                   <div className="absolute top-3 left-1/2 -translate-x-1/2 w-24 h-7 bg-black rounded-full z-20"></div>
 
                   {/* Screen content - foto da equipe */}
-                  <div className="pt-10">
+                  <div className="pt-10 pb-6">
                     <img
                       src={teamPhoto}
                       alt="Equipe Amor Auxílio Maternidade"
-                      className="w-full h-auto object-cover"
+                      className="w-full h-[420px] object-cover object-top"
                     />
                   </div>
 
