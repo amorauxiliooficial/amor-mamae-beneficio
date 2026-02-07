@@ -6,7 +6,7 @@ export const SocialProof: React.FC = () => {
   return (
     <section className="relative w-full overflow-hidden bg-black">
       {/* Container com proporção 9:16 no mobile, menor no desktop */}
-      <div className="relative w-full min-h-[85svh] md:min-h-[80vh] flex flex-col">
+      <div className="relative w-full min-h-[75svh] md:min-h-[80vh] flex flex-col">
         
         {/* Imagem de fundo */}
         <img
