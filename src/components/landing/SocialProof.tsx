@@ -44,7 +44,7 @@ export const SocialProof: React.FC = () => {
 
             {/* Frase emocional final */}
             <p className="text-sm md:text-base font-semibold text-brand-pink italic pt-2">
-              Quando o assunto é seu direito,
+              Quando o assunto é seu benefício,
               <br />
               errar não é uma opção.
             </p>
