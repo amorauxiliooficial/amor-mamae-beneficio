@@ -30,7 +30,7 @@ export const SocialProof: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-brand-pink/10 rounded-full z-0 blur-3xl opacity-50"></div>
 
             <div
-              className="relative z-10 max-w-[280px] w-full animate-fade-in"
+              className="relative z-10 max-w-[340px] w-full animate-fade-in"
               style={{
                 transform: 'rotateY(-8deg) rotateX(3deg)',
                 transformStyle: 'preserve-3d',
