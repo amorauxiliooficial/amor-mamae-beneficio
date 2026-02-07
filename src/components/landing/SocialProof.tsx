@@ -46,7 +46,7 @@ export const SocialProof: React.FC = () => {
                     <img
                       src={teamPhoto}
                       alt="Equipe Amor Auxílio Maternidade"
-                      className="w-full h-[420px] object-cover object-top"
+                      className="w-full h-[520px] object-cover object-top"
                     />
                   </div>
 
