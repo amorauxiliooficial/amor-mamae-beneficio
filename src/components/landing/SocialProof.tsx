@@ -25,12 +25,12 @@ export const SocialProof: React.FC = () => {
             </p>
           </div>
 
-          {/* iPhone com foto da equipe - visível apenas no mobile */}
-          <div className="relative md:hidden" style={{ perspective: '1000px' }}>
+          {/* iPhone com foto da equipe */}
+          <div className="relative" style={{ perspective: '1000px' }}>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-brand-pink/10 rounded-full z-0 blur-3xl opacity-50"></div>
 
             <div
-              className="relative z-10 max-w-[280px] w-full animate-fade-in"
+              className="relative z-10 max-w-[280px] md:max-w-[320px] w-full animate-fade-in"
               style={{
                 transform: 'rotateY(-8deg) rotateX(3deg)',
                 transformStyle: 'preserve-3d',
@@ -61,15 +61,6 @@ export const SocialProof: React.FC = () => {
               <div className="absolute left-0 top-56 w-1 h-12 bg-[#2a2a2a] rounded-l-sm"></div>
               <div className="absolute right-0 top-36 w-1 h-16 bg-[#2a2a2a] rounded-r-sm"></div>
             </div>
-          </div>
-
-          {/* Desktop: foto grande sem moldura de celular */}
-          <div className="hidden md:block max-w-2xl mx-auto">
-            <img
-              src={teamPhoto}
-              alt="Equipe Amor Auxílio Maternidade"
-              className="w-full h-auto rounded-2xl shadow-xl"
-            />
           </div>
 
           {/* Botão */}
