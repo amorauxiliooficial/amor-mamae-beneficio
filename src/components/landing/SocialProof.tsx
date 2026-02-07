@@ -16,7 +16,7 @@ export const SocialProof: React.FC = () => {
         />
 
         {/* Overlay gradiente de baixo para cima */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/55 to-black/35" />
 
         {/* Conteúdo com texto */}
         <div className="relative z-10 flex-1 flex flex-col justify-center items-center px-6 md:px-8 pt-16 pb-24 md:pt-12 md:pb-16">
