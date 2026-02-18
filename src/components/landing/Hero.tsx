@@ -63,11 +63,7 @@ export const Hero: React.FC = () => {
           
           {/* CTA */}
           <Button
-            onClick={() =>
-              document.getElementById("steps")?.scrollIntoView({
-                behavior: "smooth",
-              })
-            }
+            onClick={() => window.open('https://wa.me/5511940372990?text=Quero%20falar%20com%20atendente', '_blank')}
             className="text-base py-3 w-full"
           >
             Fazer Análise Gratuita!
@@ -93,11 +89,7 @@ export const Hero: React.FC = () => {
 
             <div className="flex pt-4 justify-start">
               <Button
-                onClick={() =>
-                  document.getElementById("steps")?.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
+                onClick={() => window.open('https://wa.me/5511940372990?text=Quero%20falar%20com%20atendente', '_blank')}
                 className="text-lg px-8 py-3"
               >
                 Fazer Análise Gratuita!

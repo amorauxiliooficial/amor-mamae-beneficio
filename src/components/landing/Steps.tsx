@@ -134,6 +134,7 @@ export const Steps: React.FC = () => {
         <div className="text-center mt-10 md:mt-20 sticky bottom-6 z-50 md:static">
           <Button
             variant="primary"
+            onClick={() => window.open('https://wa.me/5511940372990?text=Quero%20falar%20com%20atendente', '_blank')}
             className="animate-pulse-wow shadow-xl shadow-brand-pink/40 text-sm md:text-lg px-8 py-6 rounded-full w-full md:w-auto max-w-xs md:max-w-none font-bold uppercase tracking-wider"
           >
             Consulta gratuita agora!

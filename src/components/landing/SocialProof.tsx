@@ -54,6 +54,7 @@ export const SocialProof: React.FC = () => {
           <div className="mt-10 md:mt-12 flex flex-col items-center gap-3">
             <Button
               variant="primary"
+              onClick={() => window.open('https://wa.me/5511940372990?text=Quero%20falar%20com%20atendente', '_blank')}
               className="h-[56px] md:h-14 px-10 md:px-12 rounded-full text-base md:text-lg shadow-[0_8px_30px_-6px_rgba(0,0,0,0.4)]"
             >
               Quero meu benefício!

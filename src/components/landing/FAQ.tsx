@@ -22,7 +22,7 @@ export const FAQ: React.FC = () => {
           <div className="lg:w-1/3 space-y-6">
              <h3 className="text-muted-foreground uppercase text-sm font-semibold tracking-wider">A Amor tira todas as suas dúvidas</h3>
              <h2 className="text-2xl md:text-3xl font-bold text-brand-pink leading-tight">Se você quer saber mais sobre o seu benefício, entre em contato!</h2>
-             <div className="pt-4"><Button variant="primary">Fale com um Consultor!</Button></div>
+             <div className="pt-4"><Button variant="primary" onClick={() => window.open('https://wa.me/5511940372990?text=Quero%20falar%20com%20atendente', '_blank')}>Fale com um Consultor!</Button></div>
           </div>
           <div className="lg:w-2/3 space-y-4">
             {faqData.map((item, index) => (

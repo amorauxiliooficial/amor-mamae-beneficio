@@ -35,7 +35,7 @@ export const Eligibility: React.FC = () => {
                 ))}
               </ul>
               <div className="pt-2 flex justify-center md:justify-start">
-                <Button onClick={() => window.open('https://wa.me/', '_blank')} variant="primary" className="shadow-xl shadow-brand-green/20 w-full md:w-auto text-base md:text-lg">Quero meu benefício agora!</Button>
+                <Button onClick={() => window.open('https://wa.me/5511940372990?text=Quero%20falar%20com%20atendente', '_blank')} variant="primary" className="shadow-xl shadow-brand-green/20 w-full md:w-auto text-base md:text-lg">Quero meu benefício agora!</Button>
               </div>
             </div>
           </div>

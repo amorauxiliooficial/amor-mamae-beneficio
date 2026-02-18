@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
         <p className="text-white/80 text-lg leading-relaxed mb-8">
           A AMOR é referência em Auxílio Maternidade, oferecendo assessoria completa e humanizada para mães de todo o Brasil. Nossa equipe especializada cuida de todo o processo, garantindo que você receba o benefício que é seu por direito.
         </p>
-        <Button className="bg-brand-green hover:bg-brand-green-dark text-white px-10 py-4 text-xl shadow-xl hover:shadow-2xl">
+        <Button onClick={() => window.open('https://wa.me/5511940372990?text=Quero%20falar%20com%20atendente', '_blank')} className="bg-brand-green hover:bg-brand-green-dark text-white px-10 py-4 text-xl shadow-xl hover:shadow-2xl">
           Descubra se tem direito!
         </Button>
       </div>

@@ -94,7 +94,7 @@ export const Testimonials: React.FC = () => {
         </div>
         
         <div className="text-center mt-8 md:mt-12">
-          <Button variant="primary" className="text-sm md:text-lg px-6 md:px-8">Consulta gratuita agora!</Button>
+          <Button variant="primary" onClick={() => window.open('https://wa.me/5511940372990?text=Quero%20falar%20com%20atendente', '_blank')} className="text-sm md:text-lg px-6 md:px-8">Consulta gratuita agora!</Button>
         </div>
       </div>
     </section>
